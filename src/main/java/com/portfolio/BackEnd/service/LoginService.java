@@ -4,7 +4,9 @@ import com.portfolio.BackEnd.model.Login;
 import com.portfolio.BackEnd.repository.LoginRepository;
 import java.util.List;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
 
+@Service
 public class LoginService implements ILoginService{
     
     @Autowired
