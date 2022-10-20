@@ -19,11 +19,12 @@ public class Datos {
     private String ciudad;
     private String telefono;
     private String correo;
+    private String sobreMi;
 
     public Datos() {
     }
 
-    public Datos(Long id, String nombre, String profesion, int edad, String ciudad, String telefono, String correo) {
+    public Datos(Long id, String nombre, String profesion, int edad, String ciudad, String telefono, String correo, String sobreMi) {
         this.id = id;
         this.nombre = nombre;
         this.profesion = profesion;
@@ -31,6 +32,7 @@ public class Datos {
         this.ciudad = ciudad;
         this.telefono = telefono;
         this.correo = correo;
+        this.sobreMi = sobreMi;
     }
 
 }
