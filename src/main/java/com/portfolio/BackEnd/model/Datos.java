@@ -23,7 +23,8 @@ public class Datos {
     public Datos() {
     }
 
-    public Datos(String nombre, String profesion, int edad, String ciudad, String telefono, String correo) {
+    public Datos(Long id, String nombre, String profesion, int edad, String ciudad, String telefono, String correo) {
+        this.id = id;
         this.nombre = nombre;
         this.profesion = profesion;
         this.edad = edad;

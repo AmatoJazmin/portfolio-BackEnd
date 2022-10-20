@@ -16,6 +16,15 @@ public class Estudio {
     private String institucion; 
     private String duracion;
     private String titulo;
-    
-    
+
+    public Estudio() {
+    }
+
+    public Estudio(Long id, String institucion, String duracion, String titulo) {
+        this.id = id;
+        this.institucion = institucion;
+        this.duracion = duracion;
+        this.titulo = titulo;
+    }
+        
 }

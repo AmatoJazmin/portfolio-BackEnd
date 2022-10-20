@@ -26,19 +26,19 @@ public class HabilidadController {
         return habService.verHabilidades();
     }
     
-    @PostMapping ("/agregar/habilidad")
+    @PostMapping ("/agregar")
     public void agregarHabilidad (@RequestBody Habilidad hab){
         habService.agregarHabilidad(hab);
     }
     
-    @DeleteMapping ("/eliminar/habilidad")
-    public void borrarHabilidad(@RequestBody Habilidad hab){
-        habService.borrarHabilidad(hab);
-    }
-    
-    @PutMapping ("/editar/habilidad")
-        public void editarHabilidad(Habilidad hab) {
+    @PutMapping ("/editar")
+    public void editarHabilidad(@RequestBody Habilidad hab) {
         habService.editarHabilidad(hab);
     }
     
+    @DeleteMapping ("/eliminar")
+    public void borrarHabilidad(@RequestBody Habilidad hab){
+        habService.borrarHabilidad(hab);
+    }
+ 
 }

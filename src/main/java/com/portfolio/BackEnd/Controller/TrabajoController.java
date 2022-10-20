@@ -26,19 +26,19 @@ public class TrabajoController {
         return trabService.verTrabajos();
     }
     
-    @PostMapping ("/agregar/trabajo")
+    @PostMapping ("/agregar")
     public void agregarTrabajo (@RequestBody Trabajo trab){
         trabService.agregarTrabajo(trab);
     }
     
-    @DeleteMapping ("/eliminar/trabajo")
-    public void borrarTrabajo(@RequestBody Trabajo trab){
-        trabService.borrarTrabajo(trab);
-    }
-    
-    @PutMapping ("/editar/trabajo")
-    public void editarTrabajo(Trabajo trab) {
+    @PutMapping ("/editar")
+    public void editarTrabajo(@RequestBody Trabajo trab) {
         trabService.editarTrabajo(trab);
     }
     
+    @DeleteMapping ("/eliminar")
+    public void borrarTrabajo(@RequestBody Trabajo trab){
+        trabService.borrarTrabajo(trab);
+    }
+ 
 }

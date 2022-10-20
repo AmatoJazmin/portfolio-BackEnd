@@ -16,6 +16,15 @@ public class Trabajo {
     private String empresa; 
     private String duracion;
     private String puesto;
-    
-    
+
+    public Trabajo() {
+    }
+
+    public Trabajo(Long id, String empresa, String duracion, String puesto) {
+        this.id = id;
+        this.empresa = empresa;
+        this.duracion = duracion;
+        this.puesto = puesto;
+    }
+        
 }

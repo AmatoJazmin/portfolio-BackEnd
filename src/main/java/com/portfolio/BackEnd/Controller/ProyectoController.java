@@ -1,7 +1,7 @@
 package com.portfolio.BackEnd.Controller;
 
-import com.portfolio.BackEnd.model.Estudio;
-import com.portfolio.BackEnd.service.IEstudioService;
+import com.portfolio.BackEnd.model.Proyecto;
+import com.portfolio.BackEnd.service.IProyectoService;
 import java.util.List;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.DeleteMapping;
@@ -14,31 +14,31 @@ import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
-@RequestMapping ("/estudios")
-public class EstudioController {
+@RequestMapping ("/proyectos")
+public class ProyectoController {
     
     @Autowired
-    private IEstudioService estService;
+    private IProyectoService proyService;
     
     @GetMapping
     @ResponseBody
-    public List<Estudio> verEstudios(){
-        return estService.verEstudios();
+    public List<Proyecto> verProyectos(){
+        return proyService.verProyectos();
     }
     
     @PostMapping ("/agregar")
-    public void agregarEstudio (@RequestBody Estudio est){
-        estService.agregarEstudio(est);
+    public void agregarProyecto (@RequestBody Proyecto proy){
+        proyService.agregarProyecto(proy);
     }
     
     @PutMapping ("/editar")
-    public void editarEstudio(@RequestBody Estudio est) {
-        estService.editarEstudio(est);
+    public void editarProyecto(@RequestBody Proyecto proy) {
+        proyService.editarProyecto(proy);
     }
     
     @DeleteMapping ("/eliminar")
-    public void borrarEstudio(@RequestBody Estudio est){
-        estService.borrarEstudio(est);
+    public void borrarProyecto(@RequestBody Proyecto proy){
+        proyService.borrarProyecto(proy);
     }
     
 }
