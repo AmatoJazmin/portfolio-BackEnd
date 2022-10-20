@@ -20,11 +20,13 @@ public class Datos {
     private String telefono;
     private String correo;
     private String sobreMi;
+    private String gitHub;
+    private String linkedin;
 
     public Datos() {
     }
 
-    public Datos(Long id, String nombre, String profesion, int edad, String ciudad, String telefono, String correo, String sobreMi) {
+    public Datos(Long id, String nombre, String profesion, int edad, String ciudad, String telefono, String correo, String sobreMi, String gitHub, String linkedin) {
         this.id = id;
         this.nombre = nombre;
         this.profesion = profesion;
@@ -33,6 +35,8 @@ public class Datos {
         this.telefono = telefono;
         this.correo = correo;
         this.sobreMi = sobreMi;
+        this.gitHub = gitHub;
+        this.linkedin = linkedin;
     }
 
 }

@@ -14,13 +14,15 @@ public class Habilidad {
     @GeneratedValue (strategy=GenerationType.AUTO)
     private Long id;
     private String nombre; 
+    private String img;
 
     public Habilidad() {
     }
 
-    public Habilidad(Long id, String nombre) {
+    public Habilidad(Long id, String nombre, String img) {
         this.id = id;
         this.nombre = nombre;
+        this.img = img;
     }
-    
+  
 }
