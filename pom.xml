@@ -67,17 +67,6 @@
 	  <type>jar</type>
 	 </dependency>
 	</dependencies>
-        <mvc:cors>
-
-    <mvc:mapping path="/**"
-        allowed-origins="*"
-        allow-credentials="true" />
-
-    <mvc:mapping path="/resources/**"
-        allowed-origins="https://domain1.com" />
-
-    </mvc:cors>
-
 	<build>
 		<plugins>
 			<plugin>
