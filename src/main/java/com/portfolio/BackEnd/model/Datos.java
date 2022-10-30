@@ -1,5 +1,6 @@
 package com.portfolio.BackEnd.model;
 
+import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
@@ -13,30 +14,29 @@ public class Datos {
     @Id
     @GeneratedValue (strategy=GenerationType.AUTO)
     private Long id;
-    private String nombre;
+    private String imagen;
     private String profesion;
-    private int edad;
-    private String ciudad;
-    private String telefono;
     private String correo;
-    private String sobreMi;
     private String gitHub;
     private String linkedin;
+    @Column(length=500)
+    private String descripcion1;
+    private String descripcion2;
+    private String descripcion3;
 
     public Datos() {
     }
 
-    public Datos(Long id, String nombre, String profesion, int edad, String ciudad, String telefono, String correo, String sobreMi, String gitHub, String linkedin) {
+    public Datos(Long id, String imagen, String profesion, String correo, String gitHub, String linkedin, String descripcion1, String descripcion2, String descripcion3) {
         this.id = id;
-        this.nombre = nombre;
+        this.imagen = imagen;
         this.profesion = profesion;
-        this.edad = edad;
-        this.ciudad = ciudad;
-        this.telefono = telefono;
         this.correo = correo;
-        this.sobreMi = sobreMi;
         this.gitHub = gitHub;
         this.linkedin = linkedin;
+        this.descripcion1 = descripcion1;
+        this.descripcion2 = descripcion2;
+        this.descripcion3 = descripcion3;
     }
 
 }

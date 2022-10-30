@@ -14,19 +14,25 @@ public class Estudio {
     @GeneratedValue (strategy=GenerationType.AUTO)
     private Long id;
     private String img;
+    private String url;
     private String institucion; 
     private String duracion;
     private String titulo;
+    private String tecnologias;
+    private String descripcion;
 
     public Estudio() {
     }
 
-    public Estudio(Long id, String img, String institucion, String duracion, String titulo) {
+    public Estudio(Long id, String img, String institucion, String duracion, String titulo, String tecnologias, String descripcion) {
         this.id = id;
         this.img = img;
         this.institucion = institucion;
         this.duracion = duracion;
         this.titulo = titulo;
+        this.tecnologias = tecnologias;
+        this.descripcion = descripcion;
     }
+
         
 }

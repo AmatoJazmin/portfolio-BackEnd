@@ -16,16 +16,19 @@ public class Proyecto {
     private String nombre;
     private String url;
     private String gitHub;
+    private String tecnologias;
     private String descripcion;
+    
 
     public Proyecto() {
     }
 
-    public Proyecto(Long id, String nombre, String url, String gitHub, String descripcion) {
+    public Proyecto(Long id, String nombre, String url, String gitHub, String tecnologias, String descripcion) {
         this.id = id;
         this.nombre = nombre;
         this.url = url;
         this.gitHub = gitHub;
+        this.tecnologias = tecnologias;
         this.descripcion = descripcion;
     }
     

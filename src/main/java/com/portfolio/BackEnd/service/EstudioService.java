@@ -23,8 +23,8 @@ public class EstudioService implements IEstudioService{
     }
 
     @Override
-    public void borrarEstudio(Estudio est) {
-        estRepository.delete(est);
+    public void borrarEstudio(Long id) {
+        estRepository.deleteById(id);
     }
 
     @Override

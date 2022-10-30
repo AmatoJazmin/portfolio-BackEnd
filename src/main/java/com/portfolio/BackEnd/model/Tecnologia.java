@@ -9,20 +9,22 @@ import lombok.Setter;
 
 @Getter @Setter
 @Entity
-public class Habilidad {
+public class Tecnologia {
     @Id
     @GeneratedValue (strategy=GenerationType.AUTO)
     private Long id;
     private String nombre; 
     private String img;
+    private String url;
 
-    public Habilidad() {
+    public Tecnologia() {
     }
 
-    public Habilidad(Long id, String nombre, String img) {
+    public Tecnologia(Long id, String nombre, String img, String url) {
         this.id = id;
         this.nombre = nombre;
         this.img = img;
+        this.url = url;
     }
-  
+    
 }
