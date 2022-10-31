@@ -18,21 +18,16 @@ public class Estudio {
     private String institucion; 
     private String duracion;
     private String titulo;
-    private String tecnologias;
-    private String descripcion;
 
     public Estudio() {
     }
 
-    public Estudio(Long id, String img, String institucion, String duracion, String titulo, String tecnologias, String descripcion) {
+    public Estudio(Long id, String img, String institucion, String duracion, String titulo) {
         this.id = id;
         this.img = img;
         this.institucion = institucion;
         this.duracion = duracion;
         this.titulo = titulo;
-        this.tecnologias = tecnologias;
-        this.descripcion = descripcion;
     }
-
-        
+  
 }

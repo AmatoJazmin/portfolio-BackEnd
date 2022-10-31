@@ -23,8 +23,8 @@ public class ProyectoService implements IProyectoService{
     }
 
     @Override
-    public void borrarProyecto(Proyecto proy) {
-        proyRepository.delete(proy);
+    public void borrarProyecto(Long id) {
+        proyRepository.deleteById(id);
     }
 
     @Override

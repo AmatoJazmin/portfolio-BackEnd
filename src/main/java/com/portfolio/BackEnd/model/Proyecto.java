@@ -15,6 +15,7 @@ public class Proyecto {
     private Long id;
     private String nombre;
     private String url;
+    private String img;
     private String gitHub;
     private String tecnologias;
     private String descripcion;
